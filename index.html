@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+       <img class="header_img" src="./assets/a.png" alt="a" />
+
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__textarea">
+
+            <textarea class="area-texto" name="areaTexto" rows="8" cols="50" placeholder="Digite seu texto"></textarea>
+
+           <div class="apresentacao__textarea__p">
+                <img class="p__img" src="./assets/exclamation.png"/>
+                <ul class="error-msg"></ul>
+            </div> 
+            
+            <div class="apresentacao__textarea__buttons">    
+                <button type="button" class="btn-criptografa">Criptografar</button>
+                <button type="button" class="btn-descriptografa">Descriptografar</button>
+            </div>    
+        </section>
+
+  
+        <section class="apresentacao__painel__resultado">
+
+            <textarea class="resultado" placeholder=" " rows="15" readonly></textarea>
+
+            <div class="elementos">
+                <img class="apresentacao__painel__img" src="./assets/searchboy.png" alt="searchboy" />
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptograr.</p>
+            </div>
+
+            <button type="button" class="invisivel btn-copy" >Copy</button>
+        </section>
+    </main>
+    <footer>
+       <p> @Julio Lima</p>
+    </footer>
+
+    <script src="./js/criptografar.js"></script>
+    <script src="./js/copy.js"></script>
+    <script src="./js/error.js"></script>
+    
+</body>
+</html>
